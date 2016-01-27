@@ -33,6 +33,9 @@ html, body, .app {
   font-size: 2.0rem;
   line-height: 3.0rem;
 }
+.escape {
+  vertical-align: middle;
+}
 .text {
   width: 90%;
   height: 100%;
