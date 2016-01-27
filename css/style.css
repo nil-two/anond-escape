@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 8px;
+}
+html, body, .app {
+  height: 100%;
+}
+
+.title {
+  font-size: 3.0rem;
+}
+.app {
+  position: relative;
+  width: 100%;
+  margin: 20px 4px 0px;
+}
+.source, .destination {
+  display: inline-block;
+  width: 50%;
+  height: 70%;
+  box-sizing: border-box;
+}
+.source {
+  float: left;
+}
+.destination {
+  float: right;
+}
+
+.caption {
+  font-size: 2.0rem;
+  line-height: 3.0rem;
+}
+.text {
+  width: 90%;
+  height: 100%;
+  resize: nonk;
+}
