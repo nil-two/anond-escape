@@ -1,5 +1,5 @@
-anond-escape
-============
+Anond::Escape
+=============
 
 Escape `<`, `>`, and `&` to display them on Hatelabo::AnonymousDiary.
 App is [here](http://kusabashira.github.io/anond-escape/).
