@@ -15,6 +15,7 @@ html, body, .app {
 }
 .body {
   height: 70%;
+  margin-top: 10px;
 }
 .source, .destination {
   display: inline-block;
