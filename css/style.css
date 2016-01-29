@@ -9,7 +9,6 @@ html, body, .app {
   font-size: 3.0rem;
 }
 .app {
-  position: relative;
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
