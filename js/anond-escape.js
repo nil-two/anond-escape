@@ -19,9 +19,21 @@
       })
       ;
   }
+  function unescape(text) {
+    return text
+      .replace(/&#x26;/g, "&")
+      .replace(/&#x3c;/g, "<")
+      .replace(/&#x3e;/g, ">")
+      ;
+  }
   document.getElementById("escape").addEventListener("click", function() {
     var src = document.getElementById("source").value;
     var dst = escape(src);
     document.getElementById("destination").value = dst;
+  });
+  document.getElementById("unescape").addEventListener("click", function() {
+    var src = document.getElementById("destination").value;
+    var dst = unescape(src);
+    document.getElementById("source").value = dst;
   });
 })();
