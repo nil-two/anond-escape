@@ -37,6 +37,7 @@ html, body, .app {
   vertical-align: middle;
 }
 .text {
+  box-sizing: border-box;
   width: 90%;
   height: 100%;
   resize: none;
