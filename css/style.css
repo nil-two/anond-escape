@@ -42,3 +42,15 @@ html, body, .app {
   height: 100%;
   resize: none;
 }
+
+@media screen and (min-device-width: 0px) and (max-device-width: 1023px) {
+  .title {
+    font-size: 2.0rem;
+  }
+  .caption {
+    font-size: 1.4rem;
+  }
+  .action {
+    font-size: 1.0rem;
+  }
+}
