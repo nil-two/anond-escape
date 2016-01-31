@@ -12,6 +12,8 @@
       .replace(/\|&#x3c;/g, "|<")
       .replace(/>\|([\d\D]*?)\|</g, function(_, pre) {
         var escaped = pre
+          .replace(/<!--/g, "&#x3c;!--")
+          .replace(/-->/g, "--&#x3e;")
           .replace(/<</g, "&#x3c;&#x3c;")
           .replace(/>>/g, "&#x3e;&#x3e;")
           ;
