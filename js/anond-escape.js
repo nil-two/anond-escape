@@ -17,7 +17,7 @@
           .replace(/<</g, "&#x3c;&#x3c;")
           .replace(/>>/g, "&#x3e;&#x3e;")
           ;
-        return ['>|', escaped, '|<'].join('');
+        return [">|", escaped, "|<"].join("");
       })
       ;
   }
