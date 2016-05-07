@@ -10,22 +10,24 @@
 <body>
   <h1 class="title">Anond::Escape</h1>
   <div class="app">
-    <div class="textbox">
-      <div class="textbox-head">
-        <h2 class="caption">Source:</h2>
-        <input type="button" id="escape" class="action" value="escape" tabindex="2">
+    <div class="textboxes">
+      <div class="textbox">
+        <div class="textbox-head">
+          <h2 class="caption">Source:</h2>
+          <input type="button" id="escape" class="action" value="escape" tabindex="2">
+        </div>
+        <div class="textbox-body">
+          <textarea id="source" class="text" tabindex="1"></textarea>
+        </div>
       </div>
-      <div class="textbox-body">
-        <textarea id="source" class="text" tabindex="1"></textarea>
-      </div>
-    </div>
-    <div class="textbox">
-      <div class="textbox-head">
-        <h2 class="caption">Destination:</h2>
-        <input type="button" id="unescape" class="action" value="unescape" tabindex="4">
-      </div>
-      <div class="textbox-body">
-        <textarea id="destination" class="text" tabindex="3"></textarea>
+      <div class="textbox">
+        <div class="textbox-head">
+          <h2 class="caption">Destination:</h2>
+          <input type="button" id="unescape" class="action" value="unescape" tabindex="4">
+        </div>
+        <div class="textbox-body">
+          <textarea id="destination" class="text" tabindex="3"></textarea>
+        </div>
       </div>
     </div>
   </div>
