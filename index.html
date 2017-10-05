@@ -6,29 +6,30 @@
   <meta name="keywords" content="はてな匿名ダイアリー,エスケープ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anond::Escape</title>
-  <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.min.js"></script>
 </head>
 <body>
-  <div class="app">
-    <h1 class="app-title">Anond::Escape</h1>
-    <div class="textboxes">
-      <div class="textbox">
-        <div class="textbox-head">
-          <h2 class="caption">Source:</h2>
-          <button id="escape" class="action" tabindex="2">escape</button>
-        </div>
-        <div class="textbox-body">
-          <textarea id="source" class="text" tabindex="1"></textarea>
+  <div class="ui container" id="app">
+    <h1>Anond::Escape</h1>
+    <div class="ui two column stackable grid" v-cloak>
+      <div class="column">
+        <div class="ui form">
+          <div class="field">
+            <label>src</label>
+            <textarea v-model="text"></textarea>
+          </div>
         </div>
       </div>
-      <div class="textbox">
-        <div class="textbox-head">
-          <h2 class="caption">Destination:</h2>
-          <button id="unescape" class="action" tabindex="4">unescape</button>
-        </div>
-        <div class="textbox-body">
-          <textarea id="destination" class="text" tabindex="3"></textarea>
+      <div class="column">
+        <div class="ui form">
+          <div class="field">
+            <label>dst</label>
+            <textarea v-model="escaped_text"></textarea>
+          </div>
         </div>
       </div>
     </div>
