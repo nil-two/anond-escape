@@ -32,5 +32,5 @@
         return escapeDiaryText(this.text);
       },
     },
-  })
+  });
 })();
