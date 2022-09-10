@@ -2,7 +2,7 @@ Anond::Escape
 =============
 
 Escape `<`, `>`, and `&` to display them on Hatelabo::AnonymousDiary.
-App is [here](http://nil2nekoni.github.io/anond-escape/).
+App is [here](http://nil-two.github.io/anond-escape/).
 
 License
 -------
